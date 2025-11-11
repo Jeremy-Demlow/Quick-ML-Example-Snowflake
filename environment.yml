@@ -1,0 +1,45 @@
+name: ml-registry-showcase
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  # Python version
+  - python=3.10
+  
+  # Core Snowflake libraries
+  - pip
+  
+  # Jupyter and nbdev
+  - jupyter>=1.0.0
+  - notebook>=7.0.0
+  - ipykernel>=6.25.0
+  - nbdev>=2.3.0
+  
+  # Machine Learning
+  - xgboost>=2.0.0
+  - scikit-learn>=1.3.0
+  
+  # Data Processing
+  - pandas>=2.0.0
+  - numpy>=1.24.0
+  
+  # Visualization
+  - matplotlib>=3.7.0
+  - seaborn>=0.12.0
+  
+  # Utilities
+  - joblib>=1.3.0
+  - python-dateutil>=2.8.0
+  - pytz>=2023.3
+  - toml
+  - pydantic>=2.0.0
+  
+  # Cryptography for Snowflake connections
+  - cryptography>=41.0.0
+  
+  # Install via pip (Snowflake packages)
+  - pip:
+    - snowflake-snowpark-python>=1.11.0
+    - snowflake-ml-python>=1.8.0
+    - snowflake-connector-python[secure-local-storage,pandas]>=3.0.0
+

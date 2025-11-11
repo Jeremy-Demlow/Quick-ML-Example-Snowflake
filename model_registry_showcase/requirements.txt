@@ -1,0 +1,53 @@
+# Snowflake Model Registry Showcase - Python Dependencies
+# =========================================================
+
+# Snowflake Core Libraries
+snowflake-snowpark-python>=1.11.0
+snowflake-ml-python>=1.8.0
+
+# Machine Learning Libraries
+xgboost>=2.0.0
+scikit-learn>=1.3.0
+
+# Data Processing
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Jupyter Notebook (optional, for 07_complete_notebook.ipynb)
+jupyter>=1.0.0
+ipykernel>=6.25.0
+
+# Visualization (optional, for notebooks)
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Model Serialization
+joblib>=1.3.0
+
+# Additional Utilities
+python-dateutil>=2.8.0
+pytz>=2023.3
+
+# Note: Installation Instructions
+# ===============================
+# 1. Create a conda environment:
+#    conda create -n model-registry-showcase python=3.10
+#
+# 2. Activate the environment:
+#    conda activate model-registry-showcase
+#
+# 3. Install dependencies:
+#    pip install -r requirements.txt
+#
+# 4. Configure Snowflake connection:
+#    snow connection add
+#
+# 5. Run the scripts in order:
+#    python 01_generate_data.py
+#    python 02_train_model.py
+#    python 03_save_pickle.py
+#    python 04_create_registry.py
+#    python 05_load_and_package.py
+#    python 06a_inference_warehouse.py
+#    python 06b_inference_spcs.py (optional)
+
