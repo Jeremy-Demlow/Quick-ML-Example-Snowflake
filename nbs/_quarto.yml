@@ -1,31 +1,22 @@
 project:
   type: website
 
-website:
-  title: "Snowflake ML Registry Showcase"
-  navbar:
-    left:
-      - text: "Home"
-        file: index.ipynb
-      - text: "Notebooks"
-        menu:
-          - text: "00 - Generate Data"
-            file: 00_generate_data.ipynb
-          - text: "01 - Train Model"
-            file: 01_train_model.ipynb
-          - text: "02 - Save Pickle"
-            file: 02_save_pickle.ipynb
-          - text: "03 - Create Registry"
-            file: 03_create_registry.ipynb
-          - text: "04 - Load and Package"
-            file: 04_load_and_package.ipynb
-          - text: "05 - Inference Warehouse"
-            file: 05_inference_warehouse.ipynb
-          - text: "06 - Inference SPCS"
-            file: 06_inference_spcs.ipynb
-
 format:
   html:
     theme: cosmo
     css: styles.css
     toc: true
+    keep-md: true
+  commonmark: default
+
+website:
+  twitter-card: true
+  open-graph: true
+  repo-actions: [issue]
+  navbar:
+    background: primary
+    search: true
+  sidebar:
+    style: floating
+
+metadata-files: [nbdev.yml, sidebar.yml]
