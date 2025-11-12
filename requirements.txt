@@ -1,0 +1,10 @@
+snowflake-snowpark-python
+snowflake-ml-python
+xgboost
+scikit-learn
+pandas>=2.0.0
+numpy>=1.24.0
+joblib
+matplotlib
+seaborn
+
